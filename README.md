@@ -51,7 +51,27 @@ Create a .babelrc file in the root of your project and add the following configu
 
 ```
 
-## 5. Add Build Command
+### 4. Create a src folder in the root directory.
+
+```bash
+mkdir src
+```
+### 5. Inside the src folder, create an index.js file and paste the following code:
+```bash
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      helllo
+    </div>
+  )
+}
+
+export default App
+```
+
+## 6. Add Build Command
 Add the build command in the package.json script:
 
 ```bash
@@ -62,14 +82,16 @@ Add the build command in the package.json script:
 
 ```
 
-## 6. Build Package
+
+
+## 7. Build Package
 Run the build command to compile your source code:
 
 ```bash 
 yarn build
 ```
 
-## 7. Publish Package
+## 8. Publish Package
 Login to NPM using your credentials:
 
 ```bash
@@ -84,7 +106,7 @@ npm publish
 
 ```
 
-## 8. Updating Package Version
+## 9. Updating Package Version
 To update the package version, make changes in the root folder, rebuild the package, and then use the following commands:
 
 ```bash 
@@ -93,9 +115,9 @@ npm publish
 
 ```
 
-Make sure to update the version in your package.json before publishing.
+### 10. Make sure to update the version in your package.json before publishing.
 
-That's it! Your React component is now available as an NPM package.
+# That's it! Your React component is now available as an NPM package.
 
 
 ```bash 
